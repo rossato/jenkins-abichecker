@@ -1,0 +1,6 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:abichecker="/com/github/rossato/abichecker/tags" xmlns:t="/lib/hudson">
+  <t:summary icon="graph.gif">
+    <div><a href="abichecker">ABI Compliance Report</a> is <b>${it.summary.verdict}</b> with ${it.summary.additions} new and ${it.summary.removals} removed symbols</div>
+  </t:summary>
+</j:jelly>
